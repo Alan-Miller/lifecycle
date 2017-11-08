@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+}
+
+div.Grandparent, div.Parent, div.Child {
+  border: thin solid indianred;
+  padding: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+div.Grandparent { 
+  align-items: center; 
+  margin: 0;
+}
+div.Parent {
+  width: 50vw;
+}
+div.Parent, div.Child {
+  margin-top: 50px;
+  display: block;
+}
+
+.header {
+  height: 20vh;
+  width: 100vw;
+  background-color: #222;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Grandparent {
+  height: 80vh;
+  width: 100vw;
+  background-color: #eee;
+}
+
+button {
+  padding: 5px 8px;
+  background-color: #eee;
+  color: indianred;
+  border: none;
+  margin: 5px;
+  border: thin solid indianred;
+  outline: none;
+  cursor: pointer;
+}
+
+.highlight {
+  background-color: indianred;
+  color: #eee;
+  border: thin solid indianred;
+}
