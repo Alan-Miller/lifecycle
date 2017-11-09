@@ -14,10 +14,10 @@ export default class Child extends Component {
   componentWillMount() { console.log('componentWillMount'); }
   componentDidMount() {
     console.log('componentDidMount');
-    // this.interval = setInterval(_ => {
-    //   let timer = this.state.timer + 1;
-    //   this.setState({ timer })
-    // }, 1000); // interval counts up — see clearInterval comments below
+    this.interval = setInterval(_ => {
+      let timer = this.state.timer + 1;
+      this.setState({ timer })
+    }, 1000); // interval counts up — see clearInterval comments below
     
   }
   componentWillReceiveProps(nextProps) {
@@ -32,7 +32,7 @@ export default class Child extends Component {
 
   componentWillUnmount() {
     console.log('componentWillUnmount');
-    // clearInterval(this.interval); // clear interval to avoid error where interval is still running but component has unmounted, forcing your app to try to update a component that has unmounted
+    clearInterval(this.interval); // clear interval to avoid error where interval is still running but component has unmounted, forcing your app to try to update a component that has unmounted
   }
 
   componentWillUpdate() { console.log('componentWillUpdate'); }
