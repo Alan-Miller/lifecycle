@@ -1,1 +1,1 @@
-Life cycle events
+React lifecycle methods
